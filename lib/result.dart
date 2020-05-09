@@ -32,6 +32,7 @@ class Result extends StatelessWidget {
           children: <Widget>[
             Text(resultPhrase,
             style: TextStyle(
+              color: Colors.amber,
               fontSize: 36,
               fontWeight: FontWeight.bold,
 

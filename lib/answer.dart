@@ -6,14 +6,21 @@ class Answer extends StatelessWidget {
   Answer(this.selectHandler, this.answerText);
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      child:RaisedButton(
-        child: Text(answerText),
-        textColor: Colors.white,
-        color: Colors.blue,
-        onPressed: selectHandler,
-      ) ,
-    );
+    return
+        Container(
+            height: 80,
+            margin: EdgeInsets.all(20),
+            padding: EdgeInsets.all(20),
+            width: 250,
+            child:SizedBox(
+              child: RaisedButton(
+                elevation: 10,
+                child: Text(answerText),
+                textColor: Colors.white,
+                color: Colors.green.shade400,
+                onPressed: selectHandler,
+              ),
+            ) ,
+        );
   }
 }
